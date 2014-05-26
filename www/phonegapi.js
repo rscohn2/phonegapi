@@ -57,6 +57,9 @@ var phonegapi = {};
         var code = /\?code=(.+)$/.exec(url);
         var error = /\?error=(.+)$/.exec(url);
 
+        if (code || error)
+            loginWindow.close();
+
         if (code) {
             getTokens(code[1], params);
         } else if (error) {
