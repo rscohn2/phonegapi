@@ -15,6 +15,7 @@ Add the following script tags to your index.html. phonegapi requires jquery and 
     <script src="phonegapi.js"></script>
     
 The code uses the cordova inappbrowser plugin. If you are using cordova CLI, do:
+
     cordova plugin add org.apache.cordova.inappbrowser
     
 See test.js for examples on how to sign in, persist the tokens in local storage, refresh tokens if they expire,...
